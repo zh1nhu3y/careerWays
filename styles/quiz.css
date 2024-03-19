@@ -15,6 +15,7 @@ h2 {
     margin-top: 5rem;
     width: 70%;
     margin: auto;
+    margin-bottom: 5rem;
 }
 .text-center {
     text-align: center;
@@ -27,18 +28,29 @@ h2 {
     padding-left: 0;
 }
 .button {
-    width: 150px;
+    padding: 8px 25px;
+    background-image: linear-gradient( 135deg, #788bff     10%, #4657c3 100%);
+    text-decoration: none;
+    border-radius: 6px;
+    /* margin-top: 16px; */
+    color: #f0f0f0;
+    /* width: 150px; */
     background-color: #5995fd;
     border: none;
     outline: none;
     height: 49px;
-    border-radius: 49px;
+    /* border-radius: 49px; */
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     margin: 10px 20px 10px 0;
     cursor: pointer;
     transition: 0.5s;
+}
+.button-cont {
+    width: 100%;
+    margin: auto;
+    text-align: center;
 }
 .submit-btn {
     border: 1px solid #0e9594;
@@ -56,7 +68,9 @@ h2 {
     padding: 3rem;
 }
 .font-normal {
-    font-weight: normal;
+    font-weight: 600;
+    text-align: center;
+    color: #788bff;
 }
 ul.form-stepper {
     counter-reset: section;
@@ -170,4 +184,95 @@ ul.form-stepper li a .form-stepper-circle {
 }
 .form-stepper a {
     cursor: default;
+}
+
+#experience-group {
+    display: none;
+}
+
+/* Personality Test CSS */
+.likert-question {
+    margin-bottom: 50px;
+}
+
+.likert-question p {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.likert-scale {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: auto;
+}
+.likert-scale span {
+    padding-right: 60px;
+}
+.likert-scale input[type="radio"] {
+    display: none;
+}
+
+.likert-scale input[type="radio"] + label {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.likert-scale input[type="radio"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    margin-right: 60px; /* Adjust as needed */
+    margin-top: 8px;
+}
+
+.likert-scale input[type="radio"]:checked + label::before {
+    background-color: #007bff;
+}
+
+.likert-scale input[type="radio"] + label:first-child {
+    text-align: right;
+}
+
+.likert-scale input[type="radio"] + label:last-child {
+    text-align: left;
+}
+
+.quiz-container {
+    box-sizing: border-box;
+    padding: 0 30px;
+    margin: auto;
+}
+
+.success-card h1 {
+    color: #88B04B;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 30px 0;
+  }
+  .success-card p {
+    color: #404F5E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-size:20px;
+    margin: 0;
+  }
+  .success-card i {
+  color: #9ABC66;
+  font-size: 100px;
+  line-height: 200px;
+  margin-left:-15px;
+}
+.success-card {
+    text-align: center;
+    border: 1px solid white;
+    padding: 0;
 }

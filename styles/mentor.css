@@ -157,15 +157,15 @@
   width: 80%;
 }
 .mentor .card-image {
-  background-color: #265DF2;
+  background-color: #fff;
 }
 .mentor .description {
   text-align: left;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .mentor .name {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .mentor .card-image {
-  margin: 20px 20px 20px 40px;
+  margin: 20px 25px 20px 40px;
 }
