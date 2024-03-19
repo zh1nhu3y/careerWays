@@ -69,3 +69,14 @@ document.querySelectorAll(".btn-navigate-form-step").forEach((formNavigationBtn)
         navigateToFormStep(stepNumber);
     });
 });
+
+function toggleExperience() {
+    var experienceLevel = document.getElementById("experienceLevel");
+    var experienceGroup = document.getElementById("experience-group");
+
+    if (experienceLevel.value === "fresh_graduate") {
+        experienceGroup.style.display = "none"; // Hide the experience input field
+    } else {
+        experienceGroup.style.display = "block"; // Show the experience input field
+    }
+}
