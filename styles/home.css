@@ -57,6 +57,7 @@ nav .login{
   position: relative;
   height: 40px;
   width: 250px;
+  padding-left: 100px;
 }
 .text-content{
   position: absolute;
@@ -105,17 +106,17 @@ header .text-content .job{
 .text-content .job .two{
   color: #788bff;
 }
-.buttons{
+/* .buttons{
   margin: 20px 0 0 10px;
-}
+} */
 .buttons button{
   outline: none;
-  margin: 0 13px;
+  /* margin: 0 13px; */
   border: none;
-  border-radius: 6px;
+  border-radius: 49px;
   font-size: 18px;
   color: #fff;
-  padding: 8px 16px;
+  padding: 10px 20px;
   cursor: pointer;
   transition: all 0.3s ease;
   background-image: linear-gradient( 135deg, #788bff     10%, #4657c3 100%);

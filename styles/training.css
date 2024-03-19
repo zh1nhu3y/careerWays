@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 /* body {
-    background-color: #f0f0f0;
+    background-color: #7e8bdd;
 } */
 .heading {
     margin-top: 100px;
@@ -25,7 +25,7 @@
 .card {
     width: 325px;
     /* background-color: #f0f0f0; */
-    border-radius: 8px;
+    border-radius: 49px;
     overflow: hidden;
     box-shadow: 0px 2px 34px rgb(0,0,0,0.2);
     margin: 40px;
@@ -54,5 +54,9 @@
 }
 .btn:hover {
     background-image: linear-gradient( 135deg, #7e8bdd     10%, #535ea3 100%);
-
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-indicators {
+    filter: invert(1); /* Invert icon color */
 }
