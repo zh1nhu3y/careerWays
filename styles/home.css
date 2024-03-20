@@ -6,9 +6,8 @@
   font-family: 'Poppins',sans-serif;
 }
 header{
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
-  background: url("images/background.png") no-repeat;
   background-position: center;
 }
 ::selection{
@@ -18,8 +17,10 @@ header nav{
   position: fixed;
   width: 100%;
   left: 0;
-  top: 0;
+  top: 0px;
   z-index: 12;
+  background-color: #788bff;
+
 }
 .navbar{
   width: 90%;
@@ -36,6 +37,10 @@ header nav{
   height: 100%;
   width: 100%;
   object-fit: contain;
+}
+.logo p {
+  font-weight: bold;
+  font-size: 1.17em;
 }
 nav .menu{
   display: flex;
@@ -89,7 +94,7 @@ header .text-content .job{
   /* border-right: 4px solid #1de2d1; */
   /* animation: typing 5s steps(15) infinite; */
 }
-@keyframes typing{
+/* @keyframes typing{
   0%{
     width: 0ch;
   }
@@ -99,7 +104,7 @@ header .text-content .job{
   100%{
     width: 0ch;
   }
-}
+} */
 .text-content .job .one{
   color: #788bff;
 }
@@ -113,7 +118,7 @@ header .text-content .job{
   outline: none;
   /* margin: 0 13px; */
   border: none;
-  border-radius: 49px;
+  border-radius: 6px;
   font-size: 18px;
   color: #fff;
   padding: 10px 20px;
