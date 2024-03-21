@@ -7,7 +7,7 @@
 }
   
 body {
-  background: #a3f5ec;
+  background: #4657c3;
   overflow: hidden;
   font-family: sans-serif;
 }
@@ -159,14 +159,14 @@ body {
 .favourites button {
   outline: none;
   margin: 0 13px;
-  border: none;
+  border: 2px black solid;
   border-radius: 6px;
   font-size: 18px;
   color: #fff;
   padding: 8px 16px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-image: linear-gradient( 135deg, #788bff 10%, #4657c3 100%);
+  background-image: linear-gradient( 135deg, #788bff 75%, #4657c3 100%);
 }
 
 
