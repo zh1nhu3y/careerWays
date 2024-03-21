@@ -1,70 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 .heading {
-    margin-top: 100px;
-    display: flex;
-    justify-content: initial;
-    flex-wrap: wrap;
-    margin-block-end: 1em;
-    margin-inline-start: 180px;
-    margin-inline-end: 180px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: initial;
+  flex-wrap: wrap;
+  margin-block-end: 1em;
+  margin-inline-start: 180px;
+  margin-inline-end: 180px;
 }
 .card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
 }
 .card-container .card {
-    width: 325px;
-    /* background-color: #f0f0f0; */
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0px 2px 34px rgb(0,0,0,0.2);
-    margin: 40px;
+  width: 325px;
+  /* background-color: #f0f0f0; */
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px 2px 34px rgb(0, 0, 0, 0.2);
+  margin: 40px;
 }
 .card img {
-    width: auto;
-    height: 180px;
-    
+  width: auto;
+  height: 180px;
 }
 .card-content {
-    /* height: 290px; */
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    
+  /* height: 290px; */
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .card-content h4 {
-    /* text-align: center; */
-    padding: 5px 0px;
+  /* text-align: center; */
+  padding: 5px 0px;
 }
 .card-content p {
-    color: #666;
-    font-size: 15px;
-    line-height:1.6;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    flex-grow: 1;
-
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
 }
 .card-content .btn {
-    display: inline-block;
-    padding: 8px 16px;
-    /* background-color: #333; */
-    background-image: linear-gradient( 135deg, #788bff     10%, #4657c3 100%);
-    text-decoration: none;
-    border-radius: 6px;
-    margin-top: 16px;
-    color: #f0f0f0;
-    align-self: center;
-    
+  display: inline-block;
+  padding: 8px 16px;
+  /* background-color: #333; */
+  background-image: linear-gradient(135deg, #788bff 10%, #4657c3 100%);
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 16px;
+  color: #f0f0f0;
+  align-self: center;
 }
 .btn:hover {
-    background-image: linear-gradient( 135deg, #7e8bdd     10%, #535ea3 100%);
+  background-image: linear-gradient(135deg, #7e8bdd 10%, #535ea3 100%);
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon,
 .carousel-indicators {
-    filter: invert(1); /* Invert icon color */
+  filter: invert(1); /* Invert icon color */
+}
+
+
+/*Navbar*/
+::selection {
+  background: #a3f5ec;
+}
+
+/*Navbar*/
+.header-training {
+  height: 9vh;
+  width: 100%;
+}
+
+.header-training .nav-training {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 12;
+}
+.navbar-training {
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  margin: 0 auto 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+}
+.header-training .nav-training .logo-training {
+  height: 25px;
+  width: 150px;
+}
+.logo-training {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.nav-training .menu-training {
+  display: flex;
+}
+.nav-training .menu-training li {
+  list-style: none;
+  margin: 0 10px;
+}
+.nav-training .menu-training a {
+  color: #2c3e50;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.nav-training .menu-training a:hover {
+  color: #000;
+}
+.nav-training .login {
+  position: relative;
+  height: 40px;
+  width: 120px;
+}
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 15ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+.buttons button {
+  outline: none;
+  margin: 0 13px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: linear-gradient(135deg, #788bff 10%, #4657c3 100%);
+}
+.buttons button:hover {
+  transform: scale(0.97);
 }
