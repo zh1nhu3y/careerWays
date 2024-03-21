@@ -26,10 +26,10 @@ header nav {
 .navbar {
   width: 100%;
   display: flex;
-  padding: 30px;
+  padding: 30px !important;
   margin: 0 auto 0 auto;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-evenly !important;
   background-color: white;
 }
 header nav .logo {
@@ -91,4 +91,31 @@ nav .login {
 
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+.heading-training {
+  font-size: 18.72px;
+  font-weight: bold;
+  margin: 0;
+}
+.menu-training {
+  margin: 0;
+  padding: 0;
+}
+nav .menu-training {
+  display: flex;
+  text-align: center;
+}
+nav .menu-training li {
+  list-style: none;
+  margin: 0 10px;
+}
+nav .menu-training a {
+  color: #2c3e50;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+nav .menu-training a:hover {
+  color: #000;
 }
