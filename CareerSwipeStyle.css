@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+  
+body {
+  background: #a3f5ec;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.career_swipe {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.jobs {
+  width: 100vw;
+  height: 75vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.loaded.jobs {
+  opacity: 1;
+}
+
+.card_status {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+.card_status i {
+  font-size: 100px;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  width: 100px;
+  margin-left: -50px;
+}
+
+.job_love .fa-heart {
+  opacity: 0.7;
+  transform: scale(1);
+}
+
+.job_nope .fa-remove {
+  opacity: 0.7;
+  transform: scale(1);
+}
+
+.job_cards {
+  flex-grow: 1;
+  padding-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.job_card {
+  display: inline-block;
+  width: 90vw;
+  max-width: 400px;
+  height: 60vh;
+  background: #FFFFFF;
+  padding-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  will-change: transform;
+  transition: all 0.3s ease-in-out;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.moving.job_card {
+  transition: none;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
+
+.job_card img {
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.job_card h3 {
+  margin-top: 32px;
+  font-size: 32px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.job_card p {
+  margin-top: 24px;
+  font-size: 20px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.status_buttons {
+  flex: 0 0 100px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.status_buttons button {
+  border-radius: 50%;
+  line-height: 60px;
+  width: 60px;
+  border: 0;
+  background: #FFFFFF;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.status_buttons button:focus {
+  outline: 0;
+}
+
+.status_buttons i {
+  font-size: 32px;
+  vertical-align: middle;
+}
+
+.fa-heart {
+  color: #fface5;
+}
+
+.fa-remove {
+  color: #CDD6DD;
+}
+
+.favourites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.favourites button {
+  outline: none;
+  margin: 0 13px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: linear-gradient( 135deg, #788bff 10%, #4657c3 100%);
+}
+
+
+/*Navbar*/
+  header{
+  height: 9vh;
+  width: 100%;
+  }
+
+  header nav{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 12;
+  }
+  .navbar{
+  width: 90%;
+  display: flex;
+  padding: 20px;
+  margin: 20px auto 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  }
+  header nav .logo{
+  height: 25px;
+  width: 150px;
+  }
+  .logo{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  }
+  nav .menu{
+  display: flex;
+  }
+  nav .menu li{
+  list-style: none;
+  margin: 0 10px;
+  }
+  nav .menu a{
+  color: #2c3e50;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  }
+  nav .menu a:hover{
+  color: #000;
+  }
+  nav .login{
+  position: relative;
+  height: 40px;
+  width: 120px;
+  }
+  .text-content{
+  position: absolute;
+  top: 33%;
+  left: 7%;
+  z-index: 12;
+  }
+  header .text-content .text{
+  font-size: 27px;
+  color: #2c3350;
+  }
+  header .text-content .name{
+  color: #2c3350;
+  font-size: 75px;
+  font-weight: 600;
+  margin: -20px 0 0 -3px;
+  }
+  header .text-content .job{
+  color: #2c3350;
+  font-size: 40px;
+  margin: 5px 0;
+  margin-top: -4px;
+  display: flex;
+  }
+  .text-content .typing-text{
+  margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  /* border-right: 4px solid #1de2d1; */
+  /* animation: typing 5s steps(15) infinite; */
+  }
+  @keyframes typing{
+  0%{
+    width: 0ch;
+  }
+  50%{
+    width: 15ch;
+  }
+  100%{
+    width: 0ch;
+  }
+  }
+  .text-content .job .one{
+  color: #788bff;
+  }
+  .text-content .job .two{
+  color: #788bff;
+  }
+  .buttons{
+  margin: 0px 0 0 10px;
+  }
+  .buttons button{
+  outline: none;
+  margin: 0 13px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: linear-gradient( 135deg, #788bff     10%, #4657c3 100%);
+  }
+  .buttons button:hover{
+  transform: scale(0.97);
+  }
+  .content .homeImg img{
+  position: absolute;
+  height: 87%;
+  bottom: 0px;
+  right: 80px;
+  position: absolute;
+  /* border-radius: 10px; */
+  }
+

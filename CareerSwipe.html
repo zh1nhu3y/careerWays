@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerSwipe</title>
+    <link rel="stylesheet" href="CareerSwipeStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+</head>
+
+<body>
+
+   <header>
+        <nav>
+        <div class="navbar">
+          <div class="logo">
+           <h3>CAREERWAYS</h3>
+          </div>
+          <ul class="menu">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">CareerSwipe</a></li>
+             <li><a href="#">Career Overviews</a></li>
+              <li><a href="#">Mentorship</a></li>
+             <li><a href="#">Training</a></li>
+           </ul>
+           <div class="login buttons">
+            <button onclick="window.location.href='signin.html'">LOGIN</button>
+    
+           </div>
+        </div>
+      </header>
+
+      <h1 class="career_swipe">Career Swipe</h1>
+
+    <div class="jobs">
+        <div class="card_status">
+          <i class="fa fa-remove"></i>
+          <i class="fa fa-heart"></i>
+        </div>
+      
+        <div class="job_cards">
+          <div class="job_card">
+            <img src="">
+            <h3>Software Engineer</h3>
+            <p>Work with software programs</p>
+          </div>
+          <div class="job_card">
+            <img src="">
+            <h3>Bank Teller</h3>
+            <p>Work with banks</p>
+          </div>
+          <div class="job_card">
+            <img src="">
+            <h3>Account Clerk</h3>
+            <p>Work with money</p>
+          </div>
+          <div class="job_card">
+            <img src="">
+            <h3>Veterinarians</h3>
+            <p>Work with animals</p>
+          </div>
+          <div class="job_card">
+            <img src="">
+            <h3>Lawyer</h3>
+            <p>Work with the law? idk</p>
+          </div>
+        </div>
+      
+        <div class="status_buttons">
+          <button id="nope"><i class="fa fa-remove"></i></button>
+          <button id="love"><i class="fa fa-heart"></i></button>
+        </div>
+      </div>
+
+      <div class="favourites">
+        <button>View Your Favourites</button>
+      </div>
+
+</body>
+
+<script src="CareerSwipeScript.js"></script>
+
+</html>
