@@ -57,12 +57,12 @@ body {
 }
 
 .job_love .fa-heart {
-  opacity: 0.7;
+  opacity: 0.9;
   transform: scale(1);
 }
 
 .job_nope .fa-remove {
-  opacity: 0.7;
+  opacity: 0.9;
   transform: scale(1);
 }
 
@@ -101,21 +101,22 @@ body {
 }
 
 .job_card img {
-  max-width: 100%;
+  max-width: 70%;
   pointer-events: none;
+
 }
 
 .job_card h3 {
-  margin-top: 32px;
+  margin-top: 10px;
   font-size: 32px;
-  padding: 0 16px;
+  padding: 10px;
   pointer-events: none;
 }
 
 .job_card p {
-  margin-top: 24px;
+  margin-top: 10px;
   font-size: 20px;
-  padding: 0 16px;
+  padding: 20px;
   pointer-events: none;
 }
 
@@ -145,11 +146,11 @@ body {
 }
 
 .fa-heart {
-  color: #fface5;
+  color: #FF87D9;
 }
 
 .fa-remove {
-  color: #cdd6dd;
+  color: #AAB2B9;
 }
 
 .favourites {
