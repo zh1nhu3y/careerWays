@@ -17,8 +17,7 @@ body {
   padding: 40px;
 }
 .career-option {
-  background-color: #f1f1f1;
-  padding: 100px;
+  padding: 80px;
   text-align: center;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
@@ -29,7 +28,50 @@ body {
   text-decoration: none;
   color: #000;
   font-weight: bold;
-  font-size: larger;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.finance  {
+  background-image: url("/images/Industry/FinanceFull.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.informationTech {
+  background-image: url("/images/Industry/ITFull.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.healthcare {
+  background-image: url("/images/Industry/HealthcareFull.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.education {
+  background-image: url("/images/Industry/EducationFull.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.marketing {
+  background-image: url("/images/Industry/MarketingFull.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.engineering {
+  background-image: url("/images/Industry/EngineeringFull.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .title-container {
