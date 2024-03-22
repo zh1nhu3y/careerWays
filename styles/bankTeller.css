@@ -1,0 +1,140 @@
+.title-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    padding-top: 20px;
+    color: #000;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+
+  .career-banner {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 280px;
+    max-width: 100%;
+    padding: 30px;
+  }
+
+  .summary-containers {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px 40px 20px 40px ;
+    gap: 80px;
+  }
+
+  .summary-heading {
+    color: #788bff;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding: 50px;
+  }
+
+  .sections {
+    border: #000 1px solid;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    padding: 0px 20px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .grid-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    border: #788bff 2px solid;
+    padding: 40px 100px 40px 100px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .active, .grid-button:hover {
+    background-color: #788bff;
+    color: #fff;
+  }
+
+  .grid-content {
+    padding: 20px;
+  }
+
+  .content-heading {
+    color: #788bff;
+  }
+
+  .experience-container {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .experience-container h2, h4 {
+    color: #788bff;
+  }
+
+  .experience {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .experience button {
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(135deg, #788bff 10%, #4657c3 100%);
+    color: #fff;
+    margin: 40px;
+    padding: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .experience button:hover {
+    transform: scale(0.97);
+  }
+
+  .bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    width: 100%; 
+    padding: 50px 400px 25px 400px;
+  }
+
+  .compatibility {
+    background-color: #788bff; 
+    padding: 10px; 
+    border-radius: 15px;
+  }
+
+  .percentage {
+    width: 80%;
+  }
+
+  .bar-background {
+    border-radius: 15px; 
+    background-color: rgb(192, 192, 192);
+  }

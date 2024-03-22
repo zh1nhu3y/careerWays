@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.career_swipe {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+  color: #000;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.jobs {
+  width: 100vw;
+  height: 75vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.loaded.jobs {
+  opacity: 1;
+}
+
+.card_status {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+.card_status i {
+  font-size: 100px;
+  opacity: 0;
+  transform: scale(0.3);
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  width: 100px;
+  margin-left: -50px;
+}
+
+.job_love .fa-heart {
+  opacity: 0.9;
+  transform: scale(1);
+}
+
+.job_nope .fa-remove {
+  opacity: 0.9;
+  transform: scale(1);
+}
+
+.job_cards {
+  flex-grow: 1;
+  padding-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.job_card {
+  display: inline-block;
+  width: 90vw;
+  max-width: 800px;
+  height: 60vh;
+  background: #788bff;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  will-change: transform;
+  transition: all 0.3s ease-in-out;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+
+.moving.job_card {
+  transition: none;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
+
+.job_card img {
+  max-width: 70%;
+  pointer-events: none;
+
+}
+
+.job_card h3 {
+  margin-top: 10px;
+  font-size: 32px;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.job_card p {
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 20px;
+  pointer-events: none;
+}
+
+.status_buttons {
+  flex: 0 0 100px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.status_buttons button {
+  border-radius: 50%;
+  line-height: 60px;
+  width: 60px;
+  border: 0;
+  background: #ffffff;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.status_buttons button:focus {
+  outline: 0;
+}
+
+.status_buttons i {
+  font-size: 32px;
+  vertical-align: middle;
+}
+
+.fa-heart {
+  color: #FF87D9;
+}
+
+.fa-remove {
+  color: #AAB2B9;
+}
+
+.favourites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.favourites button {
+  outline: none;
+  margin: 0 13px;
+  border: 2px black solid;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: linear-gradient(135deg, #788bff 10%, #4657c3 100%);
+}
+

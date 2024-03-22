@@ -1,161 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mentor</title>
-    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
-    <link rel="stylesheet" href="styles/mentor.css">
-</head>
-<body>
-    <div class="heading">
-        <h2>Mentor</h2>
-        <h3>Recommended Mentor</h3>
-    </div>
-    
-    <div class="slide-container swiper">
-        <div class="slide-content">
-            <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-                        <div class="card-image">
-                            <img src="images/mentor/profile-1.jpg" alt="" class="card-img">
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Rachel Chang</h2>
-                        <p class="description">Seasoned financial advisor with over 15 years of experience in wealth management.</p>
-                        <button class="button">View More</button>
-                    </div>
-                </div>
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-                        <div class="card-image">
-                            <img src="images/mentor/profile-2.jpg" alt="" class="card-img">
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Daniel Lee</h2>
-                        <p class="description">Dedicated financial analyst known for his expertise in market research and trend analysis.</p>
-                        <button class="button">View More</button>
-                    </div>
-                </div>
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-                        <div class="card-image">
-                            <img src="images/mentor/profile-3.jpg" alt="" class="card-img">
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Sanjay Patel</h2>
-                        <p class="description">certified financial planner dedicated to helping individuals achieve their financial goals.</p>
-                        <button class="button">View More</button>
-                    </div>
-                </div>
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-                        <div class="card-image">
-                            <img src="images/mentor/profile-4.jpg" alt="" class="card-img">
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Emily Wu</h2>
-                        <p class="description">Passionate financial educator committed to promoting financial literacy among young professionals.</p>
-                        <button class="button">View More</button>
-                    </div>
-                </div>
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-                        <div class="card-image">
-                            <img src="images/mentor/profile-5.jpg" alt="" class="card-img">
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Kevin Chen</h2>
-                        <p class="description">Dynamic investment strategist with a proven track record of delivering strong returns for his clients. </p>
-                        <button class="button">View More</button>
-                    </div>
-                </div>
-                <div class="card swiper-slide">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-                        <div class="card-image">
-                            <img src="images/mentor/profile-6.jpg" alt="" class="card-img">
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h2 class="name">Jessica Lim</h2>
-                        <p class="description">Visionary fintech entrepreneur dedicated to driving innovation in the financial services industry.</p>
-                        <button class="button">View More</button>
-                    </div>
-                </div>
-            </div>
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/mentor.css" />
+    <link rel="stylesheet" href="styles/nav&scroll.css">
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <div class="navbar">
+          <div class="logo">
+            <h3>CAREERWAYS</h3>
+          </div>
+          <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="CareerSwipe.html">CareerSwipe</a></li>
+            <li><a href="careerOverview.html">Career Overview</a></li>
+            <li><a href="mentor.html">Mentorship</a></li>
+            <li><a href="training.html">Training</a></li>
+          </ul>
+          <div class="login buttons">
+            <button onclick="window.location.href='signin.html'">LOGIN</button>
+          </div>
         </div>
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
-        <div class="swiper-pagination"></div>
+      </nav>
+    </header>
+
+    <div class="heading">
+      <h1 class="heading-mentor">Mentor</h1>
+      <h3 class="subheading">Recommended Mentor</h3>
+    </div>
+
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img
+                  src="images/mentor/profile-1.jpg"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Rachel Chang</h2>
+              <p class="description">
+                Seasoned financial advisor with over 15 years of experience in
+                wealth management.
+              </p>
+              <button class="button">View More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img
+                  src="images/mentor/profile-2.jpg"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Daniel Lee</h2>
+              <p class="description">
+                Dedicated financial analyst known for his expertise in market
+                research and trend analysis.
+              </p>
+              <button class="button">View More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img
+                  src="images/mentor/profile-3.jpg"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Sanjay Patel</h2>
+              <p class="description">
+                certified financial planner dedicated to helping individuals
+                achieve their financial goals.
+              </p>
+              <button class="button">View More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img
+                  src="images/mentor/profile-4.jpg"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Emily Wu</h2>
+              <p class="description">
+                Passionate financial educator committed to promoting financial
+                literacy among young professionals.
+              </p>
+              <button class="button">View More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img
+                  src="images/mentor/profile-5.jpg"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Kevin Chen</h2>
+              <p class="description">
+                Dynamic investment strategist with a proven track record of
+                delivering strong returns for his clients.
+              </p>
+              <button class="button">View More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img
+                  src="images/mentor/profile-6.jpg"
+                  alt=""
+                  class="card-img"
+                />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Jessica Lim</h2>
+              <p class="description">
+                Visionary fintech entrepreneur dedicated to driving innovation
+                in the financial services industry.
+              </p>
+              <button class="button">View More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
     </div>
 
     <div class="heading">
-        <h3>Other Mentor</h3>
+      <h2>Other Mentor</h2>
     </div>
     <div class="mentor-container">
-        <div class="mentor-content">
-            <div class="mentor">
-                <div class="card-image">
-                    <img src="images/mentor/profile-7.jpg" alt="" class="card-img">
-                </div>
-                <div class="content">
-                    <h2 class="name">David Kim</h2>
-                    <p class="description">Strategic corporate finance executive with extensive experience in mergers and acquisitions. He advises companies on capital raising and restructuring.</p>
-                    <button class="button">View More</button>
-                </div>
-            </div>
-
-            <div class="mentor">
-                <div class="card-image">
-                    <img src="images/mentor/profile-8.jpg" alt="" class="card-img">
-                </div>
-                <div class="content">
-                    <h2 class="name">Olivia Tan</h2>
-                    <p class="description">Experienced financial consultant with a decade-long background in wealth management. Specializing in retirement planning and investment strategies, she prides herself on crafting personalized financial solutions tailored to each client's unique goals and risk tolerance.</p>
-                    <button class="button">View More</button>
-                </div>
-            </div>
-
-            <div class="mentor">
-                <div class="card-image">
-                    <img src="images/mentor/profile-9.jpg" alt="" class="card-img">
-                </div>
-                <div class="content">
-                    <h2 class="name">Ethan Park</h2>
-                    <p class="description">Dedicated financial analyst renowned for his keen insights and expertise in market research. With a focus on optimizing portfolios for long-term growth, he assists investors in making well-informed decisions to navigate the complexities of today's financial landscape.</p>
-                    <button class="button">View More</button>
-                </div>
-            </div>
-
-            <div class="mentor">
-                <div class="card-image">
-                    <img src="images/mentor/profile-10.jpg" alt="" class="card-img">
-                </div>
-                <div class="content">
-                    <h2 class="name">Grace Chen</h2>
-                    <p class="description">Seasoned financial advisor with a wealth of knowledge in wealth management and investment planning. With over 15 years of experience, she excels in developing comprehensive financial strategies that align with her clients' financial objectives and risk preferences.</p>
-                    <button class="button">View More</button>
-                </div>
-            </div>
-
+      <div class="mentor-content">
+        <div class="mentor">
+          <div class="card-image">
+            <img src="images/mentor/profile-7.jpg" alt="" class="card-img" />
+          </div>
+          <div class="content">
+            <h2 class="name">David Kim</h2>
+            <p class="description">
+              Strategic corporate finance executive with extensive experience in
+              mergers and acquisitions. He advises companies on capital raising
+              and restructuring.
+            </p>
+            <button class="button">View More</button>
+          </div>
         </div>
+
+        <div class="mentor">
+          <div class="card-image">
+            <img src="images/mentor/profile-8.jpg" alt="" class="card-img" />
+          </div>
+          <div class="content">
+            <h2 class="name">Olivia Tan</h2>
+            <p class="description">
+              Experienced financial consultant with a decade-long background in
+              wealth management. Specializing in retirement planning and
+              investment strategies, she prides herself on crafting personalized
+              financial solutions tailored to each client's unique goals and
+              risk tolerance.
+            </p>
+            <button class="button">View More</button>
+          </div>
+        </div>
+
+        <div class="mentor">
+          <div class="card-image">
+            <img src="images/mentor/profile-9.jpg" alt="" class="card-img" />
+          </div>
+          <div class="content">
+            <h2 class="name">Ethan Park</h2>
+            <p class="description">
+              Dedicated financial analyst renowned for his keen insights and
+              expertise in market research. With a focus on optimizing
+              portfolios for long-term growth, he assists investors in making
+              well-informed decisions to navigate the complexities of today's
+              financial landscape.
+            </p>
+            <button class="button">View More</button>
+          </div>
+        </div>
+
+        <div class="mentor">
+          <div class="card-image">
+            <img src="images/mentor/profile-10.jpg" alt="" class="card-img" />
+          </div>
+          <div class="content">
+            <h2 class="name">Grace Chen</h2>
+            <p class="description">
+              Seasoned financial advisor with a wealth of knowledge in wealth
+              management and investment planning. With over 15 years of
+              experience, she excels in developing comprehensive financial
+              strategies that align with her clients' financial objectives and
+              risk preferences.
+            </p>
+            <button class="button">View More</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Swiper JS -->
     <script src="javascript/swiper-bundle.min.js"></script>
     <script src="javascript/mentorCardSlider.js"></script>
-
-</body>
+  </body>
 </html>

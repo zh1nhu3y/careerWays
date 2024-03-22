@@ -1,43 +1,43 @@
-.text-content{
+.text-content {
   position: absolute;
   top: 33%;
   left: 7%;
   z-index: 12;
 }
-.home-content .text-content .text{
+.home-content .text-content .text {
   font-size: 27px;
   color: #2c3350;
 }
-.home-content .text-content .name{
-color: #2c3350;
- font-size: 75px;
- font-weight: 600;
- margin: -20px 0 0 -3px;
+.home-content .text-content .name {
+  color: #2c3350;
+  font-size: 75px;
+  font-weight: 600;
+  margin: -20px 0 0 -3px;
 }
-.home-content .text-content .job{
- color: #2c3350;
- font-size: 40px;
- margin: 5px 0;
- margin-top: -4px;
- display: flex;
+.home-content .text-content .job {
+  color: #2c3350;
+  font-size: 40px;
+  margin: 5px 0;
+  margin-top: -4px;
+  display: flex;
 }
-.text-content .typing-text{
+.text-content .typing-text {
   margin-left: 10px;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.text-content .job .one{
+.text-content .job .one {
   color: #788bff;
 }
-.text-content .job .two{
+.text-content .job .two {
   color: #788bff;
 }
 /* .buttons{
   margin: 20px 0 0 10px;
 } */
 
-.content .homeImg img{
+.content .homeImg img {
   position: absolute;
   height: 87%;
   bottom: 0px;
@@ -45,23 +45,23 @@ color: #2c3350;
   position: absolute;
   /* border-radius: 10px; */
 }
-.home-content .media-icons{
+.home-content .media-icons {
   display: flex;
   flex-direction: column;
   position: absolute;
   right: 40px;
   bottom: 40px;
 }
-.media-icons a{
- margin-top: 8px;
- font-size: 20px;
- font-weight: 500;
- text-decoration: none;
- opacity: 0.7;
- color: #2c3350;
- transition: all 0.3s ease;
+.media-icons a {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 0.7;
+  color: #2c3350;
+  transition: all 0.3s ease;
 }
 
-.media-icons a:hover{
- opacity: 1;
+.media-icons a:hover {
+  opacity: 1;
 }

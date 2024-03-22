@@ -1,90 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-::selection{
-    background: #a3f5ec;
+::selection {
+  background: #a3f5ec;
 }
 
-header nav{
-/* position: sticky; */
-width: 100%;
-left: 0;
-top: 0px;
-z-index: 12;
-/* background-color: #788bff; */
+/*Navbar*/
+header {
+  height: 9vh;
+  width: 100%;
 }
 
-.navbar{
-width: 90%;
-display: flex;
-margin: 30px auto;
-align-items: center;
-justify-content: space-between;
+header nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 12;
 }
-
-header nav .logo{
-height: 25px;
-width: 150px;
+.navbar {
+  width: 100%;
+  display: flex;
+  padding: 30px !important;
+  margin: 0 auto 0 auto;
+  align-items: center;
+  justify-content: space-evenly !important;
+  background-color: white;
 }
-
-
-header nav .logo p {
-font-weight: bold;
-font-size: 1.17em;
+header nav .logo {
+  height: 25px;
+  width: 150px;
 }
-
-nav .menu{
-display: flex;
+.logo {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
-
-nav .menu li{
-list-style: none;
-margin: 0 10px;
+nav .menu {
+  display: flex;
 }
-
-nav .menu a{
-color: #2c3e50;
-font-size: 17px;
-font-weight: 500;
-text-decoration: none;
+nav .menu li {
+  list-style: none;
+  margin: 0 10px;
 }
-
-nav .menu a:hover{
-color: #000;
+nav .menu a {
+  color: #2c3e50;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
 }
-
-nav .login{
-position: relative;
-height: 40px;
-width: 250px;
-padding-left: 100px;
+nav .menu a:hover {
+  color: #000;
 }
-
-.buttons button{
-outline: none;
-/* margin: 0 13px; */
-border: none;
-border-radius: 6px;
-font-size: 14px;
-color: #fff;
-padding: 10px 20px;
-cursor: pointer;
-transition: all 0.3s ease;
-background-image: linear-gradient( 135deg, #788bff     10%, #4657c3 100%);
+nav .login {
+  position: relative;
+  height: 40px;
+  width: 120px;
 }
-
-.buttons button:hover{
-transform: scale(0.97);
-background-image: linear-gradient( 135deg, #7e8bdd     10%, #535ea3 100%);
-
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 15ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+.buttons button {
+  outline: none;
+  margin: 0 13px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: linear-gradient(135deg, #788bff 10%, #4657c3 100%);
+}
+.buttons button:hover {
+  transform: scale(0.97);
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
+}
+
+.heading-training {
+  font-size: 18.72px;
+  font-weight: bold;
+  margin: 0;
+}
+.menu-training {
+  margin: 0;
+  padding: 0;
+}
+nav .menu-training {
+  display: flex;
+  text-align: center;
+}
+nav .menu-training li {
+  list-style: none;
+  margin: 0 10px;
+}
+nav .menu-training a {
+  color: #2c3e50;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+nav .menu-training a:hover {
+  color: #000;
 }

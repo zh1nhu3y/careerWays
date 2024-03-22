@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerSwipe</title>
+    <link rel="stylesheet" href="styles/CareerSwipeStyle.css">
+    <link rel="stylesheet" href="styles/nav&scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <h3>CAREERWAYS</h3>
+        </div>
+        <ul class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="CareerSwipe.html">CareerSwipe</a></li>
+          <li><a href="careerOverview.html">Career Overview</a></li>
+          <li><a href="mentor.html">Mentorship</a></li>
+          <li><a href="training.html">Training</a></li>
+        </ul>
+        <div class="login buttons">
+          <button onclick="window.location.href='signin.html'">LOGIN</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+      <h1 class="career_swipe">Career Swipe</h1>
+
+    <div class="jobs">
+        <div class="card_status">
+          <i class="fa fa-remove"></i>
+          <i class="fa fa-heart"></i>
+        </div>
+      
+        <div class="job_cards">
+          <div class="job_card">
+            <h3>Insurance Agent</h3>
+            <img src="images/Careers/InsuranceAgent.svg">
+            <p>Sell life, property, casualty, health, automotive, or other types of insurance. 
+              May refer clients to independent brokers, work as an independent broker, or be 
+              employed by an insurance company.</p>
+          </div>
+          <div class="job_card">
+            <h3>Account Clerk</h3>
+            <img src="images/Careers/AccountClerk.svg">
+            <p>Interview persons desiring to open accounts in financial institutions. 
+              Explain account services available to prospective customers and assist them in 
+              preparing applications.</p>
+          </div>
+          <div class="job_card">
+            <h3>Bank Teller</h3>
+            <img src="images/Careers/BankTeller.svg">
+            <p>Receive and pay out money. Keep records of money and negotiable instruments 
+              involved in a financial institution's various transactions.</p>
+          </div>
+          <div class="job_card">
+            <h3>Financial Analyst</h3>
+            <img src="images/Careers/FinancialAnalyst.svg">
+            <p>Conduct quantitative analyses of information involving investment programs 
+              or financial data of public or private institutions, including valuation of businesses.</p>
+          </div>
+          <div class="job_card">
+            <h3>Accountant</h3>
+            <img src="images/Careers/Accountant.svg">
+            <p>Examine, analyze, and interpret accounting records to prepare financial statements, 
+              give advice, or audit and evaluate statements prepared by others. Install or advise on 
+              systems of recording costs or other financial and budgetary data.</p>
+          </div>
+        </div>
+      
+        <div class="status_buttons">
+          <button id="nope"><i class="fa fa-remove"></i></button>
+          <button id="love"><i class="fa fa-heart"></i></button>
+        </div>
+      </div>
+
+      <div class="favourites">
+        <button onclick="window.location.href='Favourites.html'">View Your Favourites</button>
+      </div>
+
+</body>
+
+<script src="javascript/CareerSwipeScript.js"></script>
+
+</html>
